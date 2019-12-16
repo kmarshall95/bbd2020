@@ -1,0 +1,467 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4{
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+body{
+    margin: 0% 1%;
+}
+
+img{
+    width: 100%;
+}
+
+/*CSS for website starts*/
+
+/*nav*/
+/*
+.logo{
+    width: 50px;
+    height: 75px;
+}
+nav{
+    background: #000;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav .icon {
+    /*toggle hidden on desktop*/
+   /* display: none;
+}
+
+nav a {
+    display: inline-block;
+    float: left;
+    padding: 22px 15px;
+    text-decoration: none;
+    text-align: center;
+     
+    margin: 2% 1%;
+    color: white;
+
+}
+
+nav a:hover {
+    color: #00316b;
+}
+
+.active {
+    color: blue;
+}
+
+
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background: #001f44;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+     
+    display: none;
+}*/
+
+.navMenu{
+    width: 100%;
+    overflow: hidden;
+    background: rgba(39,62,84,0.82);
+    height: 100%;
+}
+.logo{
+    width: 75px;
+    box-sizing: content-box;
+}
+.navMenu > div{
+    float: left;
+    padding: 10px 20px;
+}
+.navMenuItem{
+    margin: 1% 0;
+}
+.navMenuItem a{
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+/*Hero container*/
+.hero-container{
+    /*background-color: blue;*/
+    background-image: url(https://media.giphy.com/media/l3fQ9icfExRfiePrq/source.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /*padding: 20px 15px;*/
+    /*height: 68vh;*/
+    margin: 0 -1%;
+}
+
+.top-container{
+    /*font-size: 1.6rem;*/
+    background: rgba(39,62,84,0.82);
+    height: 100%;
+}
+.hero-container h1{
+    text-align: center;
+    width: 100%;
+    color: white;
+    background: rgba(39,62,84,0.82);
+    font-size: 3rem;
+}
+
+.top-container-par{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    color: white;
+    /*font-size: 1.6rem;*/
+}
+
+.hero_left{
+    animation: fade-in 1.4s;
+}
+.hero_left img{
+    padding: 2% 4%;
+}
+@keyframes fade-in{
+    0%{opacity: 0%;}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+
+.hero_right{
+    padding: 2% 4%;    
+    text-align: right;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+}
+.hero_right_content{
+    position: absolute;
+    top: 25%;
+}
+.hero_right a{    
+    text-align: center;
+    padding: 2% 5%;
+    background-color: black;
+    position: absolute;
+    left: 25%;
+    margin-top: 3%;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.hero_right p{
+    animation: slide-left .5s;
+}
+@keyframes slide-left{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/*type-of-website*/
+.type-of-website{
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(3, 3fr);
+    width: 100%;
+}
+.website_type{
+    text-align: center;
+    margin: 5.5% 0%;
+    padding: 10px 20px;
+}
+.website_type:hover{
+    box-shadow: 5px 5px 10px blue;
+}
+
+.website_type h3{
+    margin: 1% 0;
+}
+
+.website_icon{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+/*container*/
+.container{
+    color: white;
+}
+.container_side{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr;
+    text-align: center;
+    margin: 10px 5%;
+}
+.container_left_side{
+    background-color: #0000fe;
+    background-attachment: fixed;
+    color: white;
+    padding: .5% .5%;
+}
+.container_left_side p, .container_right_side p{
+    line-height: 1.8rem;
+    padding: 15% 5%;
+}
+.container_right_side{
+    /*background-image: url(../images/images.jfif);
+    background-attachment: fixed;
+    background-size: contain;*/
+    background-color: #0000fe;
+    padding: .5%;
+}
+.container_right_content{
+}
+
+.container_icon{
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+    height: 450px;
+    transition-duration: 4s;
+    transition: bottom;
+    color: blue;
+    
+}
+
+.container_layout{
+    margin: 0% 3%;
+}
+.layout_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+}
+.layout_header{
+    grid-column: 1/4;
+    text-align: center;
+}
+.layout_grid > div{
+    padding: 2% 5%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1% 1%;
+    background-color: slategrey;
+    border-color: black;
+}
+.layout_grid > div:hover{
+    background-color: darkblue;
+    color: white;      
+}
+.layout_grid > div:nth-child(odd):hover{
+    background-color: cornflowerblue;
+    color: darkblue;      
+}
+.one{
+    grid-column: 1/2;
+    text-align: center;
+}
+.two{
+    grid-column: 2/4;
+    text-align: center;
+}
+.three{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.contact_section{ 
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 2% 0%;
+}
+input[type=text], input[type=textarea],input[type=email], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/*
+Experiement with CSS
+*/
+
+/*footer*/
+/*Footer*/
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    padding: 1% 2%;
+}
+
+.three_subsection_footer {
+    background-color: black;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.three_subsection_footer > div {
+    padding: .5% 4%;
+    border-right: 1px solid white;
+}
+
+.logo_footer img {
+    max-height: 100px;
+}
+
+.footer_nav {}
+
+.footer_nav ul {
+    display: inline-flex;
+    
+    list-style: none;
+    color: white;
+}
+
+.footer_nav li {
+    margin: 1% 1%;
+}
+
+.footer_contact {}
+
+
+/*Media Queries*/
+@media screen and (max-width: 600px) {
+    /*nav*/
+    nav a:not(:first-child) {
+        display: none;
+    }
+
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+
+    /*    stacks navs*/
+    nav {
+        display: inline-block;
+    }
+
+    /*makes nav a s full screen*/
+
+
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+    nav.responsive {
+        position: relative;
+    }
+
+    nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+    }
+
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        border: 1px solid grey;
+    }
+    
+
+    /*Hero Container*/
+    .top-container h1{
+        padding: 0;
+          
+        text-align: center;
+    }
+
+.top-container-par{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    color: white;
+    height: 100%;
+    /*font-size: 1.6rem;*/
+}
+
+.hero_left{
+
+}
+
+.hero_right{
+    text-align: center;
+    padding-right: 0;
+}
+.hero_right_content{
+    top: 0%;
+}
+
+.hero_right p{
+}
+
+.hero_right a{
+}
+
+    .top-container-par{
+        text-align: center;
+        padding: 2% 4%;
+        color: white;
+        /*font-size: 1.6rem;*/
+    }    
+    /*type-of-website*/
+    .type-of-website{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    
+.website_type:hover{
+    box-shadow: 5px 5px 10px blue;
+}
+    .container_side{
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 100%;
+        text-align: center;
+    }
+    .three_subsection_footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+}
+}
+@media screen and (max-width: 700px) {}
+@media screen and (min-width: 900px) {}
